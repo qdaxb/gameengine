@@ -1,0 +1,53 @@
+<game>
+<actions>
+
+<action name="InitAction">
+<opt name="data" val="player1.hp=100"/>
+<opt name="data" val="player2.hp=100"/>
+<opt name="wait"/>
+<opt name="test" val="player1.hp"/>
+<opt name="test" val="player2.hp"/>
+</action>
+
+<action name="attackAction">
+<opt name="data" val="{card}.status=used"/>
+<opt name="text" val="{source} attack {target} by {card}"/>
+<opt name="wait"/>
+</action>
+
+<action name="defenceAction">
+<opt name="data" val="{card}.status=used"/>
+<opt name="text" val="{source} defence by {card}"/>
+</action>
+
+<action name="passAction">
+<opt name="data" val="{source}.hp={source}.hp-1"/>
+<opt name="text" val="{source} is hurt by {target},hp-1"/>
+</action>
+
+
+<action name="duelAction">
+<opt name="data" val="{card}.status=used"/>
+<opt name="text" val="{source} duel with {target} by {card}"/>
+<opt name="wait"/>
+<opt name="text" val="deul end"/>
+</action>
+
+<action name="d_attackAction">
+<opt name="data" val="{card}.status=used"/>
+<opt name="text" val="{source} used {card}"/>
+<opt name="wait"/>
+</action>
+
+<action name="d_passAction">
+<opt name="data" val="{source}.hp={source}.hp-1"/>
+<opt name="text" val="{source} lost the duel,hp-1"/>
+</action>
+
+<action name="TestAction">
+<opt name="data" val="player1.hp=222"/>
+</action>
+
+</actions>
+
+</game>

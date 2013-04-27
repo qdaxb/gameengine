@@ -1,0 +1,18 @@
+#ifndef _COMMONDEF_H_
+#define _COMMONDEF_H_
+
+#define MAX_VALUE_LENGTH 256
+#define NULL_STRING _T("")
+#define NUMBER_ZERO 0
+#define NUMBER_ONE 1
+#define EQUAL_STRING 0
+
+// Error Number
+#define RETURN_SUCCESS 1000
+#define ERROR_XMLFILE_INVALID 1001
+#define ERROR_NEWPOINTER_FAILED 1002
+#define ERROR_NO_CHILD 1003
+#define ERROR_NO_VALUE 1004
+#define ERROR_NO_TYPE 1005
+
+#endif
